@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Science Books</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script1.js"></script>
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+  <source src="violet.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+  <header>
+    <h1>Science Books</h1>
+    <nav><a href="index.html">Back to Home</a></nav>
+  </header>
+  <section class="hero">
+    <h2>Explore Science Books</h2>
+  </section>
+  <section>
+    <div class="books-container" id="booksContainer"></div>
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      filterBooks("science");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programming Books</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="stars"></div>
+    <video autoplay muted loop id="bg-video">
+  <source src="violet.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+  <header>
+    <h1>Programming Books</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Back to Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Explore Programming Sub-genres</h2>
+    <p>Choose a sub-genre to explore related books.</p>
+  </section>
+  <section>
+    <div class="genre-buttons">
+      <button onclick="filterBooks('c')">C Language</button>
+      <button onclick="filterBooks('python')">Python</button>
+      <button onclick="filterBooks('java')">Java</button>
+    </div>
+    <div class="books-container" id="booksContainer"></div>
+  </section>
+</body>
+</html>

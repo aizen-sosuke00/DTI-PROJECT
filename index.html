@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script1.js"></script>
+</head>
+<body>
+  <div class="stars"></div>
+<video autoplay muted loop id="bg-video">
+  <source src="violet.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+  <header>
+    <h1>Book Explorer</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#phases">Ideation</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Welcome to Book Explorer</h2>
+    <p>Find your next read by exploring genres and diving into book previews.</p>
+  </section>
+
+  <section id="about">
+    <h2>About the Project</h2>
+    <p>Book Explorer is a web-based application developed as part of our Design Thinking and Innovation coursework. The project aims to solve a common challenge faced by readers—particularly students—who want to discover books in a simple, visual, and genre-specific way. Our solution offers an aesthetically pleasing, responsive website that allows users to explore a variety of book genres, each displayed on dedicated pages. Clicking on a genre opens a new tab with book cover previews, and clicking a cover opens a sample or preview PDF for that book. The website features a magical, Harry Potter–inspired dark theme with a starry night background to make the browsing experience immersive and unique. Functionality like hover effects, sub-genres (e.g., Programming → Python), and mobile responsiveness are designed to enhance user engagement and accessibility. Ultimately, Book Explorer is more than a website—it’s an experience designed to inspire reading through discovery and visual interaction.</p>
+  </section>
+
+  <section id="problem">
+    <h2>Problem Statement</h2>
+    <p>In today's digital landscape, discovering books online can be surprisingly frustrating—especially for students and casual readers who aren’t sure what they’re looking for. Most online libraries or book platforms are cluttered, text-heavy, and lack intuitive ways to explore new genres or titles. Users often face challenges like endless scrolling, minimal visual engagement, and difficulty filtering books by interest areas. Based on our user research, we identified a significant gap: there is no central, user-friendly, and visually appealing platform that allows readers to explore books by genre with ease. This leads to missed opportunities for discovery, reduced reading engagement, and user dissatisfaction. Our problem statement became clear:
+“Readers, especially students, struggle to find engaging and relevant books online due to a lack of a centralized, visual, and interactive browsing experience.”</p>
+  </section>
+
+  <section id="research">
+    <h2>User Research</h2>
+    <p>To understand the needs, preferences, and frustrations of our target users, we conducted user research through surveys, interviews, and informal observation. Our primary audience included college students, casual readers, and tech-savvy learners. A digital survey shared across college groups yielded responses from over 30 participants. Key insights revealed that most users prefer visual browsing (such as book covers), want to filter books by genre or subject, and often feel lost on text-heavy library websites. Interviews further uncovered that users dislike endless scrolling and value quick previews to help them decide whether a book interests them. Accessibility on mobile devices and a clean interface were also repeatedly mentioned as expectations. This research shaped our design decisions and confirmed the need for a visually interactive, genre-driven book discovery platform. The empathy map and journey map developed from this phase helped define pain points and highlight opportunities for innovation.</p>
+  </section>
+
+  <section id="phases">
+    <h2>PHASES</h2>
+    <p>🧠 1. Empathize Phase<br>
+In the Empathize phase, we focused on understanding the needs, frustrations, and desires of book readers, particularly students. We conducted informal interviews and online surveys targeting college students, avid readers, and casual browsers. Key insights revealed that users often feel overwhelmed by cluttered online libraries, lack motivation to explore new genres, and are frustrated by the absence of visual previews. Many also prefer a browsing experience that's mobile-friendly and aesthetically engaging. These findings led us to prioritize accessibility, intuitive navigation, and visual elements like book covers and genre-based discovery.<br>
+
+<br>🧩 2. Define Phase<br>
+Using the data from our empathy work, we defined our core problem: “Students and readers struggle to discover books that interest them due to the lack of a centralized, visual, and engaging browsing platform.” We synthesized responses into a clear problem statement and built user personas representing key user types: the casual browser, the genre-hopper, and the goal-oriented reader. These personas helped us stay focused on user-centric solutions throughout the process. A journey map further illustrated the user's current experience and highlighted pain points like unengaging UI and information overload.
+<br>
+
+<br>💡 3. Ideate Phase<br>
+In this phase, we explored a wide range of ideas to solve the problem, using brainstorming and mind-mapping techniques. Ideas included a recommendation engine, genre-based exploration, book cover previews, and theme customization. We converged on the concept of a responsive, visually rich website that lets users browse books by genre and view previews by clicking on covers. We sketched low-fidelity wireframes to test layout ideas and grouped features by complexity and impact. Our priority was simplicity, elegance, and speed of access — leading to the "Book Explorer" concept.<br>
+
+<br>🧪 4. Prototype Phase<br>
+We brought our best ideas to life through rapid prototyping. We designed a responsive website using HTML, CSS, and JavaScript, where users could click on genre buttons to view related books with their covers. Each genre opened in a new page, maintaining focus and reducing clutter. We applied a Harry Potter–inspired aesthetic with a starry night theme to create a sense of magic and exploration. Sub-genres like “Python” under “Programming” allowed us to test dynamic filtering. The interface included hover effects, mobile responsiveness, and visual feedback for better engagement.<br>
+
+<br>🧪 5. Test Phase<br>
+We tested our prototype with a group of 10 users, including classmates and faculty. Feedback was gathered through observation and post-use surveys. Users praised the clean layout and the genre-based flow, saying it felt organized and purposeful. However, some users suggested clearer call-to-action buttons and improved image quality. Based on this, we added hover effects, subtle transitions, and refined the image dimensions. The final design retained the engaging aesthetic while becoming more functional and accessible on all devices. This validation confirmed that we solved our original user challenge effectively.</p>
+  </section>
+
+  <section id="solution">
+    <h2>Explore Books by Genre</h2>
+    <div class="genre-buttons">
+  <button onclick="window.open('fiction.html', '_blank')">Fiction</button>
+  <button onclick="window.open('nonfiction.html', '_blank')">Non-Fiction</button>
+  <button onclick="window.open('fantacy.html', '_blank')">Fantasy</button>
+  <button onclick="window.open('science.html', '_blank')">Science</button>
+  <button onclick="window.open('programming.html', '_blank')">Programming</button>
+</div>
+
+    <div class="books-container" id="booksContainer">
+      <!-- Books will be populated here -->
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Team Members</h2>
+    <p>A BHAVYA SRI, A SAI BALAJI NAYAK, B MOHITH KUMAR , KRISHNA LOKESH</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: projectteam@college.edu</p>
+    <a href="project-report.pdf" download>Download Report</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Book Explorer | Design Thinking Project</p>
+  </footer>
+</body>
+</html>
