@@ -61,13 +61,13 @@ const books = [
   },
      {
     title: "PYTHON PROGRAMMING",
-    genre: "p",
+    genre: "python",
     cover: "p1.pre.jpg",
     preview: "p1.con.pdf"
   },
      {
     title: "JAVA PROGRAMMING",
-    genre: "j",
+    genre: "java",
     cover: "j1.pre.jpg",
     preview: "j1.con.pdf"
   },
