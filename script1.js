@@ -55,19 +55,19 @@ const books = [
   },
      {
     title: "C PROGRAMMING",
-    genre: "c",
+    genre: "programming",
     cover: "c2.pre.jpg",
     preview: "c2.con.pdf"
   },
      {
     title: "PYTHON PROGRAMMING",
-    genre: "python",
+    genre: "programming",
     cover: "p1.pre.jpg",
     preview: "p1.con.pdf"
   },
      {
     title: "JAVA PROGRAMMING",
-    genre: "java",
+    genre: "programming",
     cover: "j1.pre.jpg",
     preview: "j1.con.pdf"
   },
